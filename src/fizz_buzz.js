@@ -1,22 +1,28 @@
 console.log ("hello , FizzBuzz!")
 
-for (let i=1; i <= 100; i++)
+for (let i=1; i <= 200; i++)
 {
-    if (i % 3 == 0 && i % 5 == 0)
+    let output = "";
+    
+    if (i % 3 == 0)
     {
-        console.log("fizzbuzz") 
-    }  
-    else if (i % 3 == 0)
-    {
-        console.log("fizz");
+        output += "fizz";
     }
-    else if (i % 5 == 0)
+
+    if (i % 5 == 0)
     {
-        console.log("buzz")
+        output += "buzz"
     }
-//    else if (i % 3 && 5 == fizzbuzz)
-    else 
+    
+    if (i % 7 == 0)
     {
-        console.log (i);                                    
+        output += "zipp"
     }
+            
+    if ("" == output) 
+    {
+        output = i;                                    
+    }
+
+    console.log(output);
 }
