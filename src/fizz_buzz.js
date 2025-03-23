@@ -6,7 +6,7 @@ for (let i=1; i <= 100; i++)
     {
         console.log("fizzbuzz") 
     }  
-    if (i % 3 == 0)
+    else if (i % 3 == 0)
     {
         console.log("fizz");
     }
