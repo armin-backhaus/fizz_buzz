@@ -2,6 +2,10 @@ console.log ("hello , FizzBuzz!")
 
 for (let i=1; i <= 100; i++)
 {
+    if (i % 3 == 0 && i % 5 == 0)
+    {
+        console.log("fizzbuzz") 
+    }  
     if (i % 3 == 0)
     {
         console.log("fizz");
@@ -10,7 +14,9 @@ for (let i=1; i <= 100; i++)
     {
         console.log("buzz")
     }
-    else {
-        console.log (i);
+//    else if (i % 3 && 5 == fizzbuzz)
+    else 
+    {
+        console.log (i);                                    
     }
 }
